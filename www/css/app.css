@@ -1,0 +1,91 @@
+/* Write your styles */
+html,body {}
+ul,li,dl,dt,dd,i { list-style: none;font-style: normal; margin: 0; padding: 0;}
+/* myapp */
+.myAppHead { background: #292c34;}
+.myAppTab { background: #fff; margin: 0;}
+.myAppTab .am-tabs-nav a { background: #fff;}
+.myAppTab .am-tabs-nav>.am-active a {    color: #222;}
+.myAppTab .am-tabs-nav { background: #d2cfd0;}
+.myAppTab .am-tabs-nav a {color: #71757b;}
+.myAppTab .am-tabs-nav li { height: 43px;}
+.myAppTab .am-tabs-nav>.am-active:after { border: none;}
+.myAppTab .am-tabs-nav>.am-active {     border-bottom: 4px solid #00c4cd;}
+.am-tabs-bd .myAppTabPanel { padding: 0;} 
+.myAppSlider {}
+.myAppSlider .am-control-nav { bottom: 12px}
+.myAppSlider .am-control-nav li a.am-active {background: #00c4cd;}
+.myAppNews { margin: 0;}
+.myAppNews li{ padding-left: 1rem; padding-right: 1rem;}
+.myAppNews .am-list>li {    border-color: #eaedee;}
+
+.myAppNews .am-list .am-list-item-hd a , .am-list-item-hd a:focus , .am-list-item-hd a:hover { color: #222; font-size: 16px; line-height: 20px; }
+.myAppNews .am-list .am-list-item-text {    -webkit-line-clamp: 1;max-height: 1.3em;}
+.myAppNews .am-list-item-hd { padding-top: 3px;}
+.myAppGallery { padding: 0;}
+.myAppGallery li { padding: 5px 0;}
+.myAppGallery li:nth-child(1){padding-right: 6px;}
+.myAppGallery li:nth-child(2){padding: 5px 3px}
+.myAppGallery li:nth-child(3){ padding-left: 6px;}
+.myAppOffcanvas .am-offcanvas-bar { background: #292c34;}
+.myAppOffcanvas .am-offcanvas-content { text-align: center;}
+.myAppOffcanvas .myAppOffcanvasUserIco { margin: 0 auto; text-align: center; margin-top: 20px; overflow: hidden; width: 140px; border-radius: 50%; margin-bottom: 20px;}
+.myAppOffcanvas .myAppOffcanvasUserIco img { width: 100%;}
+.myAppOffcanvas .myAppOffcanvasInfo {  font-size: 16px; color: #fff; padding-top: 18px;}
+.myAppOffcanvas .myAppOffcanvasUserName { border-radius: 30px; display: inline-block; color: #fff; padding: 2px 19px; background: #7c77b9; font-size: 14px; text-align: center; }
+.myAppOffcanvas .am-container { padding: 10px; padding-top: 36px;}
+.myAppOffcanvas .am-container .myAppBtn { height: 26px; width: 100px; padding: 5px 0px; font-size: 14px;}
+.myArticle { width: 100%;}
+.myArticle .myArticleHeadImg {width: 100%; position: relative;  margin-bottom: 46px;}
+.myArticle .myArticGoBack { z-index: 99; border-radius: 50%; width: 34px;  height: 34px; color: #fff; line-height: 32px;  text-indent: -1px; background:rgba(0,0,0,.5); top: 20px; left: 20px; position: absolute;}
+.myArticle .myArticGoBack img { height: 16px;}
+.myArticle .myArticleHeadImg img {border-radius:0 0 70px 70px; }
+.myArticle .myArticleName { font-size: 14px; color: #b2b6ba; width: 100%; text-align: center;}
+.myArticle .myArticleTime { font-size: 12px; width: 100%; text-align: center; color: #b8bcc5;}
+.myArticle .myArticleTitle {font-weight: bold;font-size: 22px; color: #222; width: 100%; padding: 20px; text-align: center;}
+.myArticle .myArticleHeadImg .myArticleIco { overflow: hidden; border: 3px solid #fff; width: 90px; position: absolute; border-radius: 50%; left: 50%; bottom: -40px; transform: translateX(-50%);-webkit-transform: translateX(-50%);}
+.myArticle .myArticleHeadImg img {  width: 100%;}
+.myArticleText { padding: 0 20px; font-size: 14px; padding-top: 20px;}
+.myArticleText  p {font-size: 14px;}
+.myArticleText  img { width: 100%; max-width: 100%; padding: 0; margin: 0;}
+.myArticleComment { padding-top: 40px;}
+.myArticleCommentInput { background: #f8f9f9; padding: 10px 0; width: 100%;padding: 10px 20px;}
+.myArticleCommentInputTitle { width: 100%; }
+.myArticleCommentInputTitle:after {content: '';display: table;clear: both;}
+.myArticleCommentInputTitle .commentNum { color: #222; font-size: 16px; font-weight: bold; position: relative; float: left; color: #222;}
+.myArticleCommentInputTitle .commentShow { float: right;  font-size: 14px;}
+.myArticleCommentInputTitle .commentShow .am-icon-caret-down { color:#666}
+.myArticleInput { width: 100%;  overflow: hidden; padding-top: 10px;padding-bottom: 10px;}
+.myArticleInputLeft { position: relative; float: left; width: 50px; border-radius: 50%; margin-top: 10px; overflow: hidden; }
+.myArticleInputLeft img { width: 100%;}
+.myArticleInputRight { margin-left: 70px; height: 50px; line-height: 64px;}
+.myArticleInputRight input { display: inline-block; vertical-align: middle; height: 30px; text-indent: 20px; color: #222; border-radius: 9999px; border: 1px solid #d3d9dc; width: 100%;}
+.myArticleInputRight input[placeholder] { font-size: 12px;}
+
+.myArticleCommentList { width: 100%; padding: 30px 20px 0;}
+.myArticleCommentList ul {overflow: hidden;}
+.myArticleCommentList li { margin-bottom: 15px;}
+.myArticleCommentListLeft { float: left;}
+.myArticleCommentListLeft:after {content: '';display: table;clear: both;}
+.myArticleCommentListLeft dt { float: left; margin: 0;width: 50px; border-radius: 50%; overflow: hidden;}
+.myArticleCommentListLeft dt img { width: 100%;}
+.myArticleCommentListLeft dd { float: left;margin: 0; margin-left: 16px;}
+.myArticleCommentListLeft dd span{ display: block; font-size: 16px; line-height: 28px; font-weight: bold; }
+.myArticleCommentListLeft dd i { font-size: 12px; color: #666; line-height: 14px; display: block;}
+.myArticleCommentListRight { float: right;  color: #bcc0c8;}
+.myArticleCommentListRight dt { float: left;font-weight: normal;}
+.myArticleCommentListRight dd { float: left; margin: 0; padding-left: 10px;font-weight: normal;}
+.myArticleCommentListRight:after {content: '';display: table;clear: both;}
+.myArticleCommentListRight .am-icon-heart { color: #e87151;}
+.myArticleCommentListText { font-size: 14px; color: #7a7b84; padding-top: 15px; clear: both; border-bottom: 1px solid #eff1f2; padding-bottom: 15px;}
+
+.myAppImgNews {width: 100%;}
+.myAppImgNewsList { width: 100%; padding: 20px;}
+.myAppImgNewsBlock { width: 100%;}
+.myAppImgNewsBlock img {width: 100%;}
+.myAppImgNewsBlock .myAppImgNewsTitle { font-size: 20px; color: #222; padding: 10px 0; font-weight: bold;}
+.myAppImgNewsBlock .myAppImgNewsUser { overflow: hidden; width: 100%; margin-bottom: 20px;}
+.myAppImgNewsBlock .myAppImgNewsUser .myAppImgNewsTiem { font-size: 12px; color: #c8cbd1; float: right; height: 40px; line-height: 40px;}
+.myAppImgNewsBlock .myAppImgNewsUser .myAppImgNewsIco { float: left; position: relative; width: 40px; border-radius: 50%; overflow: hidden;}
+.myAppImgNewsBlock .myAppImgNewsUser .myAppImgNewsIco img { width: 100%;}
+.myAppImgNewsBlock .myAppImgNewsUser .myAppImgNewsName { height: 40px; float: left; font-size: 16px; line-height: 40px; padding-left: 10px; color: #19bab3; font-weight: bold;}
