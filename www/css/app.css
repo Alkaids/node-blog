@@ -2,7 +2,7 @@
 html,body {}
 ul,li,dl,dt,dd,i { list-style: none;font-style: normal; margin: 0; padding: 0;}
 /* myapp */
-.myAppHead { background: #292c34;}
+.myAppHead { background: #a41f24;}
 .myAppTab { background: #fff; margin: 0;}
 .myAppTab .am-tabs-nav a { background: #fff;}
 .myAppTab .am-tabs-nav>.am-active a {    color: #222;}

@@ -42,18 +42,48 @@ server.use(cookieSession({
 }));
 
 // 用户请求
-server.get('/', (req, res) => {
+// 1.banner
+server.get('/', (req, res, next) => {
 
     let insert = 'SELECT * FROM `banner_table`'
-
     db.query(insert, (err, data) => {
         if (err) {
             res.status(500).send('database error' + err).end();
         } else {
-            res.render('index.ejs', { banner: data });
+            res.banner = data;
+            next();
         }
     });
 
+});
+// 2.article
+server.get('/', (req, res, next) => {
+
+    let insert = 'SELECT `title`,`sub_title`,`ID`,`banner_img` FROM `article_table`'
+    db.query(insert, (err, data) => {
+        if (err) {
+            res.status(500).send('database error' + err).end();
+        } else {
+            res.article = data;
+            next();
+        }
+    });
+
+});
+// 3.渲染
+server.get('/', (req, res) => {
+    res.render('index.ejs', { 
+        banner: res.banner,
+        article: res.article 
+    });
+});
+
+// 4.详情页跳转
+server.get('/article', (req, res) => {
+    res.render('page.ejs', { 
+        banner: res.banner,
+        article: res.article 
+    });
 });
 
 // 静态文件
