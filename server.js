@@ -6,6 +6,7 @@ const cookieSession = require('cookie-session');
 const multer = require('multer');
 const consolidate = require('consolidate');
 const mysql = require('mysql');
+const tools = require('./libs/comment');
 
 // express实例
 const server = express();
@@ -72,18 +73,34 @@ server.get('/', (req, res, next) => {
 });
 // 3.渲染
 server.get('/', (req, res) => {
-    res.render('index.ejs', { 
+    res.render('index.ejs', {
         banner: res.banner,
-        article: res.article 
+        article: res.article
     });
 });
 
 // 4.详情页跳转
 server.get('/article', (req, res) => {
-    res.render('page.ejs', { 
-        banner: res.banner,
-        article: res.article 
-    });
+
+    if (req.query.id) {
+        db.query(`SELECT * FROM article_table WHERE ID=${req.query.id}`, (err, data) => {
+            if (err) {
+                res.status(500).send('database error').end();
+            } else {
+                if (data.length === 0) {
+                    res.status(404).send('文章找不到').end();
+                } else {
+                    let article_data = data[0];
+                    article_data.content = tools.formatContent(article_data.content);
+                    res.render('page.ejs', {
+                        article_data
+                    });
+                }
+            }
+        });
+    } else {
+        res.status(404).send('文章找不到').end();
+    }
 });
 
 // 静态文件

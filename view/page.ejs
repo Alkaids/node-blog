@@ -15,38 +15,48 @@
 </head>
 <body>
 <div class="am-g">
-		<div class="myArticle">
-			<div class="myArticleHeadImg">
-			    <div class="myArticGoBack"><img class="am-header-icon-custom" src="data:image/svg+xml;charset=utf-8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 12 20&quot;&gt;&lt;path d=&quot;M10,0l2,2l-8,8l8,8l-2,2L0,10L10,0z&quot; fill=&quot;%23fff&quot;/&gt;&lt;/svg&gt;" alt=""/></div>
-				<div class="myArticleIco"><img src="img/userico.jpg" alt=""></div>
-				<img src="img/a9.jpg">
+	    <header data-am-widget="header" class="myAppHead am-header am-header-default">
+			<div class="am-header-left am-header-nav">
+				<a href="/">
+					<img class="am-header-icon-custom" src="data:image/svg+xml;charset=utf-8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 12 20&quot;&gt;&lt;path d=&quot;M10,0l2,2l-8,8l8,8l-2,2L0,10L10,0z&quot; fill=&quot;%23fff&quot;/&gt;&lt;/svg&gt;" alt=""/>
+				</a>
 			</div>
+		
+			<h1 class="am-header-title">
+				<a href="#title-link" class="">
+					è™Žæ‰‘
+				</a>
+			</h1>
+		
+			<div class="am-header-right am-header-nav">
+				<a href="#right-link" class="">
+		
+		
+				</a>
+			</div>
+		</header>
+		<div class="myArticle">
 			<div class="myArticleName">
-				SHANNON ROGERS
 			</div>
 			<div class="myArticleTitle">
-				Prints, Poppies and Patterns: Touring the Marimekko Factory
+				<%= article_data.title %>
 			</div>
 			<div class="myArticleTime">
-				24 JAN 2016
+				<%= article_data.times %>
 			</div>
 		</div>
 	  <article data-am-widget="paragraph" class="myArticleText am-paragraph am-paragraph-default" data-am-paragraph="{ tableScrollable: true, pureview: true }">
 	  
-      <p>On the occasion of the last Stockholm Furniture Fair which has just closed its doors in Sweden, Carl Hansen announced the launching of production of two "new" models by Hans J. Wegner. The CH22 lounge chair, which marked the beginning of their long standing collaboration between the designer and Carl Hansen in the fifties, as well as the dining chair CH26, which was never put into production until today. This is an earlier model that has a lot of stylistic similarity with th.</p>
-      <img src="img/a1.jpg" />
-      <p>As usual with the creations of the famous Danish furniture manufacturer, the attention to details and balance of the construction is delightful.</p>
-      <p>The CH22 and CH26 will be available in oak, walnut or a combination of both with multiple finishes, starting from summer 2016.</p>
-  </article>
+		<%- article_data.content %>
+  	</article>
 	<div class="myArticleComment">
 		<div class="myArticleCommentInput">
 			<div class="myArticleCommentInputTitle">
-				<div class="commentNum">comment 3</div>
-				<div class="commentShow">Show All <i class="am-icon-caret-down"></i></div>
+				<div class="commentNum">è¯„è®º</div>
 			</div>
 			<div class="myArticleInput">
 				<div class="myArticleInputLeft"><img src="img/c1.jpg"></div>
-				<div class="myArticleInputRight"><input type="text" placeholder="ÇëÊäÈëÎÄ×Ö" ></div>
+				<div class="myArticleInputRight"><input type="text" placeholder="åæ§½ä¸¤å¥..." ></div>
 			</div>
 		</div>
 		<div class="myArticleCommentList">

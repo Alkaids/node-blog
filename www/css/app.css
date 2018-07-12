@@ -19,9 +19,19 @@ ul,li,dl,dt,dd,i { list-style: none;font-style: normal; margin: 0; padding: 0;}
 .myAppNews li{ padding-left: 1rem; padding-right: 1rem;}
 .myAppNews .am-list>li {    border-color: #eaedee;}
 
-.myAppNews .am-list .am-list-item-hd a , .am-list-item-hd a:focus , .am-list-item-hd a:hover { color: #222; font-size: 16px; line-height: 20px; }
+.myAppNews .am-list .am-list-item-desced a , .am-list-item-desced a:focus , .am-list-item-desced a:hover { color: #222; font-size: 18px; line-height: 24px; }
 .myAppNews .am-list .am-list-item-text {    -webkit-line-clamp: 1;max-height: 1.3em;}
 .myAppNews .am-list-item-hd { padding-top: 3px;}
+.myAppNews .am-list-item-hd .tag{
+    height:18px;
+    padding:0 5px;
+    font-size:14px;
+    line-height:18px;
+    font-weight: 400;
+    background:#999;
+    color:#fff;
+    margin-right:5px;
+}
 .myAppGallery { padding: 0;}
 .myAppGallery li { padding: 5px 0;}
 .myAppGallery li:nth-child(1){padding-right: 6px;}
@@ -36,12 +46,14 @@ ul,li,dl,dt,dd,i { list-style: none;font-style: normal; margin: 0; padding: 0;}
 .myAppOffcanvas .am-container { padding: 10px; padding-top: 36px;}
 .myAppOffcanvas .am-container .myAppBtn { height: 26px; width: 100px; padding: 5px 0px; font-size: 14px;}
 .myArticle { width: 100%;}
-.myArticle .myArticleHeadImg {width: 100%; position: relative;  margin-bottom: 46px;}
+.myArticle .myArticleHeadImg {width: 100%; position: relative;}
 .myArticle .myArticGoBack { z-index: 99; border-radius: 50%; width: 34px;  height: 34px; color: #fff; line-height: 32px;  text-indent: -1px; background:rgba(0,0,0,.5); top: 20px; left: 20px; position: absolute;}
 .myArticle .myArticGoBack img { height: 16px;}
 .myArticle .myArticleHeadImg img {border-radius:0 0 70px 70px; }
 .myArticle .myArticleName { font-size: 14px; color: #b2b6ba; width: 100%; text-align: center;}
-.myArticle .myArticleTime { font-size: 12px; width: 100%; text-align: center; color: #b8bcc5;}
+.myArticle .myArticleTime { font-size: 12px; width: 100%; text-align: right; color: #b8bcc5;padding-right:50px;}
+.myArticle .myArticlePic { width: 100%; text-align: center; color: #b8bcc5;margin-top:14px;}
+.myArticle .myArticlePic img{ width: 90%}
 .myArticle .myArticleTitle {font-weight: bold;font-size: 22px; color: #222; width: 100%; padding: 20px; text-align: center;}
 .myArticle .myArticleHeadImg .myArticleIco { overflow: hidden; border: 3px solid #fff; width: 90px; position: absolute; border-radius: 50%; left: 50%; bottom: -40px; transform: translateX(-50%);-webkit-transform: translateX(-50%);}
 .myArticle .myArticleHeadImg img {  width: 100%;}

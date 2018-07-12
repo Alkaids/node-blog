@@ -7,8 +7,9 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>Amaze UI Examples</title>
+  <title>HUPU</title>
   <meta name="renderer" content="webkit">
+  <meta name="referrer" content="no-referrer"/>
   <meta http-equiv="Cache-Control" content="no-siteapp" />
   <link rel="stylesheet" href="css/amazeui.min.css">
   <link rel="stylesheet" href="css/app.css">
@@ -57,7 +58,7 @@
             <ul class="am-slides">
               <% for(var i = 0; i < banner.length; i++){ %>
                 <li>
-                  <img src="<%= banner[i].src %>">
+                  <img src="<%= banner[i].imgUrl %>">
                 </li>
               <% } %>
             </ul>
@@ -76,19 +77,19 @@
                 <!--缩略图在标题右边-->
                 <% for(var i=0;i<article.length;i++){ %>
                     <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-right">
+                        <a href="/article?id=<%= article[i].detailUrl %>" class="">
                         <div class=" am-u-sm-8 am-list-main">
                           <h3 class="am-list-item-hd">
-                            <a href="/article?id=<%= article[i].ID %>" class=""><%= article[i].title %></a>
+                            <%- article[i].title %>
                           </h3>            
                           <div class="am-list-item-text"><%= article[i].sub_title %></div>
       
                         </div>
                         <div class="am-u-sm-4 am-list-thumb">
-                          <a href="/article?id=<%= article[i].ID %>" class="">
-                            <img src="<%= article[i].banner_img %>" />
-                          </a>
+                            <img src="<%= article[i].imgUrl %>" />
                         </div>
-                      </li>
+                      </a>
+                    </li>
                 <% } %>
 
               </ul>
