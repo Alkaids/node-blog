@@ -5,7 +5,7 @@ const cookieParser = require('cookie-parser');
 const cookieSession = require('cookie-session');
 const multer = require('multer');
 const consolidate = require('consolidate');
-const { getNewsList, getNewsDetail } = require('./spider');
+const { getNewsList, getNewsDetail } = require('./libs/spider');
 const tools = require('./libs/comment');
 
 // express实例
@@ -63,3 +63,7 @@ server.get('/article', (req, res) => {
 server.use(expressStatic(__dirname + '/www'));
 
 server.listen(9000);
+
+console.log('server listening at http://localhost:9000');
+
+module.exports = server;
