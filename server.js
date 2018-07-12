@@ -107,3 +107,5 @@ server.get('/article', (req, res) => {
 server.use(expressStatic(__dirname + '/www'));
 
 server.listen(9000);
+
+console.log('localhost:9000');
