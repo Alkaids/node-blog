@@ -8,16 +8,15 @@
  2. ejs (渲染)
  3. request + cheerio (爬虫)
  4. jQuery (前端)
+ 5. gulp (静态文件打包)
  
 ## 使用
 
-> git clone git@github.com:Alkaids/node-blog.git
-
+#### 安装
 > npm install
 
-> npm start
+#### 开始
+> npm run start 
 
-> 打开浏览器默认监听9000端口
-
-## 待完成
- 1. gulp 打包
+#### 构建
+> npm run build

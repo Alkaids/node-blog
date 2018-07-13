@@ -60,10 +60,6 @@ server.get('/article', (req, res) => {
 });
 
 // 静态文件
-server.use(expressStatic(__dirname + '/www'));
-
-server.listen(9000);
-
-console.log('server listening at http://localhost:9000');
+server.use(expressStatic(__dirname + '/dist'));
 
 module.exports = server;
