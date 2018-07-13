@@ -2,7 +2,10 @@
 
 最近学习node，本着实践是检验真理的唯一标准的原则做了这个仿虎扑app的小玩意，重点是对后端的学习，因此前端有很多功能还没做
 
+## 预览
 
+![预览](https://github.com/Alkaids/node-blog/blob/master/preview.png)
+[在线预览](http://mynodehupu.top:9000/)
 ## 技术栈
  1. express (核心)
  2. ejs (渲染)
