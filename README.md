@@ -5,6 +5,7 @@
 ## 预览
 
 ![预览](https://github.com/Alkaids/node-blog/blob/master/preview.png)
+
 [在线预览](http://mynodehupu.top:9000/)
 ## 技术栈
  1. express (核心)
